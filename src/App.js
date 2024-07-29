@@ -32,8 +32,20 @@ function FormInput({
 export default function App() {
   return (
     <form>
-      <FormInput />
-      <FormInput />
+      <FormInput
+        labelId="email"
+        labelText="Email"
+        inputType="email"
+        inputPlaceholder="you@example.com"
+        inputDescription="Bunu sadece spam için kullanacağız"
+      />
+      <FormInput
+        labelId="username"
+        labelText="Username"
+        inputType="text"
+        inputPlaceholder="your username"
+        inputDescription="Kullanıcı adınızı girin."
+      />
     </form>
   );
 }
